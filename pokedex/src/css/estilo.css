@@ -1,0 +1,53 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADFE8;
+}
+
+.pokedex{
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.listagem{
+    max-width: 200px;
+}
+
+.listagem .pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #00000088;
+    color: #FFFFFF;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 30px 0 0 30px;
+    min-height: 70px;
+    box-shadow: 5px 5px 8px rgba(99, 90, 90, 0.3);
+    transition: 0.15s ease-in-out;
+}
+
+.listagem .pokemon:hover{
+    transform: scale(1.05);
+}
+
+.listagem .pokemon img{
+    width: 25%;
+    border-radius: 50%;
+}
+
+.listagem .pokemon span{
+    padding-right: 20px;
+}
+
+.listagem .pokemon.ativo{
+    background-color: #FA6668;
+}
