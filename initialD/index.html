@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Serie | Initial D | Website Landing Page Design</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.netflix.com/br/" class="logo" rel="next"><img class="logo-img" src="img/logo.png"></a>
+        <ul class="nav">
+            <li class="nav-list"><a href="#" class="nav-list-text">Home</a></li>
+            <li class="nav-list"><a href="#" class="nav-list-text">TV Shows</a></li>
+            <li class="nav-list"><a href="#" class="nav-list-text">Filmes</a></li>
+            <li class="nav-list"><a href="#" class="nav-list-text">Ultimos lançamentos</a></li>
+            <li class="nav-list"><a href="#" class="nav-list-text">Minha lista</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img class="img-banner" src="img/background-initial.jpg">
+            <div class="content">
+                <h2>Initial D</h2>
+                <h4>
+                    <span>2013</span>
+                    <span><i>+14</i></span>
+                    <span>Oito Temporadas</span>
+                    <span>Corrida / Aventura</span>
+                </h4>
+                <p>Durante o dia, um jovem de 18 anos faz entregas de tofu para o pai,<br>
+                um piloto de corridas reformado. Mas, de noite, é o adolescente<br> que leva o pé ao acelerador.</p>
+                 
+                 <div class="buttons">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Minha Lista</a>
+                 </div>
+            </div>
+
+            <a class="play" onclick="video()">
+                <img class="img-play" src="img/botao-play.png" alt="Play">Assistir Trailer
+            </a>
+        </div>
+
+        <div class="trailer">
+            <video src="video/trailer.webm" controls="true" autoplay="true"></video>
+            <img class="close"  src="img/close.png" alt="Sair" onclick="video()">
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
