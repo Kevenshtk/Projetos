@@ -1,0 +1,65 @@
+@mixin centralizar
+    display: flex
+    justify-content: center
+    align-items: center
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+main
+    width: 100vw
+    height: 100vh
+    @include centralizar
+    flex-direction: column
+
+
+    .container-principal
+        width: 500px
+        @include centralizar
+        flex-direction: column
+        background-color: #fafafa
+        border-radius: 42px
+        box-shadow:  10px 10px 26px #9b9b9b, -10px -10px 26px #fff
+        padding: 20px
+
+        .container-add-filter
+            display: flex
+            justify-content: space-between
+
+        .modal
+            width: 350px
+            height: 90px
+            display: none
+            justify-content: space-between
+            align-items: center
+            box-shadow:  5px 5px 10px #b5b5b5, -5px -5px 10px #fff
+            border-radius: 42px
+            padding: 18px
+            z-index: 1
+            position: absolute
+            top: 30%
+            left: 60%
+
+        .container-lista
+            height: 280px
+            list-style: none
+            overflow-y: auto
+
+            .item
+                width: 400px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 5px
+                padding: 5px
+
+                .descricao
+                    margin: 0
+                
+            .desativar
+                background-color: #00000023
+
+                p
+                    text-decoration: line-through
