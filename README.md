@@ -28,7 +28,13 @@
     - ### link do repositório: [initialD](https://github.com/Kevenshtk/Projetos/tree/main/initialD)
     - ### deploy: [initialD](https://kevenshtk.github.io/Projetos/initialD/index.html)
 
-
+- ## Mercado Livre
+    - ### imagem do projeto:
+    ![Imagem](https://kevenshtk.github.io/Projetos/mercadoLivre/src/img/telaMercado.png)
+    - ### tecnologias usadas: 
+        <img src="https://skillicons.dev/icons?i=html,sass,js" alt="icons"/>
+    - ### link do repositório: [mercadoLivre](https://github.com/Kevenshtk/Projetos/tree/main/mercadoLivre)
+    - ### deploy: [mercadoLivre](https://kevenshtk.github.io/Projetos/mercadoLivre/index.html)
 
 - ## To Do List
     - ### imagem do projeto:
