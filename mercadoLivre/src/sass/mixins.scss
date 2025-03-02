@@ -1,0 +1,36 @@
+@mixin estilo-img-topo($width, $url, $size) {
+    width: $width;
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $size;
+}
+
+@mixin estilo-icon($width, $cursor) {
+    width: $width;
+    cursor: $cursor;
+}
+
+@mixin limitar-secao() {
+    max-width: 1200px;
+}
+
+@mixin margem-subtitulo() {
+    h3{
+        margin: 25px 0;
+    }
+}
+
+@mixin estilo-btn($background, $color) {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 8px 0;
+    background-color: $background;
+    color: $color;
+}

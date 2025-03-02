@@ -1,0 +1,115 @@
+@import 'mixins.scss';
+
+@media (max-width: 1024px) {
+    .area-tabelas {
+        div{
+            margin: 15px 0;
+
+            .tabela {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 924px) {
+    .area-card {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .card-anuncio {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        .topo-alto {
+            .mobile {
+                display: inline-block;
+            } 
+
+            .img-logo {
+                @include estilo-img-topo(65px, "../img/icon.png", 60px);
+            }
+    
+            .container-pesquisa {
+                width: 85%;
+            }
+    
+            .img-propaganda {
+                display: none;
+            }
+    
+            .btn-carrinho {
+                @include estilo-img-topo(50px, "../img/icon/carrinho-de-compras.png", 30px);
+            }
+        }
+    
+        .topo-baixo {
+            justify-content: flex-start;
+    
+            .container-left {
+                span{
+                    display: none;
+                }
+            }
+        
+            .container-center {
+                font-size: 14px;
+                margin: 0 auto;
+            }
+    
+            .container-right, .itens-menu {
+                display: none;
+            }
+        }
+    }
+     
+    .secao-secundaria {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .secao-principal {
+        .conteudo-principal {
+            width: 85%;
+    
+            .mobile {
+                display: inline-block;
+            }   
+        
+            .secao-produto {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 20px;
+
+                .img-produto-g {
+                    img {
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .secao-principal {
+        .conteudo-principal {
+            .secao-produto {
+                .img-produto-g {
+                    img {
+                        width: 240px;
+                        height: 240px;
+                    }
+                }
+            }
+        }
+    }
+}

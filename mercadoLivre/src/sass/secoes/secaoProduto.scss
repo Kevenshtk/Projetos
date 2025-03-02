@@ -1,0 +1,26 @@
+.secao-produto {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-produto-p img {
+        width: 50px;
+        display: block;
+        cursor: pointer;
+        border: 1px solid #c9c9c9;
+        border-radius: 5px;
+        margin-bottom: 8px;
+
+        &:hover {
+            border: 2px solid #3483fa;
+        }
+    }
+
+    .img-produto-g {
+        img {
+            width: 450px;
+            height: 450px;
+        }
+    }
+}

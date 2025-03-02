@@ -1,0 +1,30 @@
+.secao-caract-produto{
+    @include margem-subtitulo;
+
+    .area-tabelas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        padding: 15px 0;
+        border-bottom: 1px solid #c9c9c9;
+    
+        .tabela {
+            border: 1px solid #ededed;
+            margin: 15px 0;
+            border-collapse: collapse;
+    
+            tr {
+                &:nth-of-type(odd) {
+                    background-color: #ededed;
+                }
+    
+                td {
+                    font-size: 12px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

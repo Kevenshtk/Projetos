@@ -1,0 +1,9 @@
+.secao-descricao {
+    @include margem-subtitulo;
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #818181;
+    }
+}

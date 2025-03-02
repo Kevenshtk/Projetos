@@ -1,0 +1,127 @@
+@import "mixins.scss";
+
+.mobile {
+    width: 100%;
+    display: none;
+
+    .status-avaliacao {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .status {
+            font-size: 14px;
+            color: #000000a6;
+        } 
+
+        .avaliacao {
+            color: #000000a6;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            .icon{
+                @include estilo-icon(70px, pointer);
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .titulo-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nome-produto {
+            width: 100%;
+            max-width: 450px;
+            margin: 18px 0;
+        }
+
+        .icon {
+            @include estilo-icon(30px, pointer);
+            height: 30px;
+        }
+    }
+
+    .preco {
+        font-size: 30px;
+        margin-top: 15px;
+
+        span{
+            font-size: 14px;
+            color: #000000a6;
+        }
+    }
+
+    .preco-parcela {
+        font-size: 12px;
+        margin-bottom: 5px;
+
+        span{
+            font-size: 10px;
+            color: #000000a6;
+        }
+    }
+
+    .link-card-left {
+        font-size: 13px;
+        color: #3483fa;
+        text-decoration: none;
+    }
+
+    .chegada, .retirada, .devolucao {
+        margin: 20px 0;
+        line-height: 20px;
+        font-size: 14px;
+
+        .destaque-card{
+            font-weight: 600;
+        }
+
+        .observacao {
+            font-size: 12px;
+        }
+    }
+
+    .estoque {
+        max-width: 400px;
+
+        .titulo {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .quant {
+            height: 40px;
+            background-color: #f0f0f085;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .btn-compra-carrinho {
+        
+        margin: 0 auto;
+        .comprar {
+            @include estilo-btn(#3483fa, #fff);
+        }
+    
+        .add-carrinho {
+            @include estilo-btn(#ededed, #3483fa);
+        }
+    }
+
+    .info-vendedor {
+        margin: 15px 0;
+        font-size: 14px;
+
+        .nome-vendedor {
+            color: #3483fa;
+            cursor: pointer;
+        }
+    }
+}

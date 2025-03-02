@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #fff454;
+    padding: 10px 0;
+
+    .topo-alto, .topo-baixo {
+        width: 100%;
+        @include limitar-secao();
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.topo-alto {
+    .img-logo {
+        @include estilo-img-topo(150px, "../img/logo.png", contain);
+    }
+
+    .container-pesquisa {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+
+        .campo-pesquisa {
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            border: none;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.342);
+        }
+    
+        .container-icon {
+            width: 50px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            background-color: #fff;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.342);
+    
+            .icon {
+                @include estilo-icon(20px, pointer);
+            }
+        }
+    }
+
+    .img-propaganda {
+        width: 280px;
+        background-image: url(../img/disney.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.topo-baixo {
+    .container-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        .icon {
+            @include estilo-icon(20px, pointer);
+        }
+
+        span {
+            font-size: 13px;
+            color: #000000a6;
+        }
+    }
+
+    .container-center {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 20px;
+
+            ul li {
+                background-color: rgb(78, 70, 70);
+            }
+
+            li a {
+                color: #000000a6;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            .menu-dropdown {
+                position: relative;
+        
+                .dropdown {
+                    margin-top: 5px;
+                    position: absolute;
+                    display: none;
+        
+                    li {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+        
+                &:hover .dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .container-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+
+        a {
+            color: #000000a6;
+            text-decoration: none;
+            font-size: 12px;
+
+            .icon {
+                @include estilo-icon(20px, pointer);
+            }
+        }
+    }
+}

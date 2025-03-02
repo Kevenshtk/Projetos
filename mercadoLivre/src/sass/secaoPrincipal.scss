@@ -1,0 +1,41 @@
+@import "secoes/secaoProduto.scss";
+@import "secoes/secaoVendedor.scss";
+@import "secoes/secaoCaractProduto.scss";
+@import "secoes/secaoDescProduto.scss";
+@import "sidebar.scss";
+@import "mobile.scss";
+
+.secao-principal {
+    width: 100%;
+    @include limitar-secao();
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .estilo-link {
+    font-size: 14px;
+    color: #3483fa;
+    text-decoration: none;
+    }
+
+    .fonte-destaque {
+        color: #02c72c;
+        font-weight: 600;
+    }
+
+    .conteudo-principal {
+        width: 65%;
+    }
+
+    .sidebar {
+        width: 40%;
+        height: 20%;
+        border: 1px solid #c9c9c9;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
