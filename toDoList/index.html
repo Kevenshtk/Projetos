@@ -18,15 +18,18 @@
         <div class="container-principal animate__animated animate__zoomIn">
             <h2>To Do List</h2>
             <div class="container-add-filter mt-3 mb-3">
-                <input type="text" class="form-control col-6" id="desc" placeholder="O que você vai fazer ?">
+                <div class="container-add">
+                    <input type="text" class="form-control" id="desc" placeholder="O que você vai fazer ?">
                 <button class="btn btn-outline-primary" onClick="addTarefaFront()"><i class="fa-solid fa-plus"></i></button>
-            
-                <select class="form-control col-3" id="filter">
-                    <option value="Todos">Todos</option>
-                    <option value="Feito">Feitos</option>
-                    <option value="aFazer">à fazer</option>
-                </select>
-                <button class="btn btn-outline-primary" onClick="filterTarefasFront()"><i class="fa-solid fa-filter"></i></button>
+                </div>
+                <div class="container-filter">
+                    <select class="form-control" id="filter">
+                        <option value="Todos">Todos</option>
+                        <option value="Feito">Feitos</option>
+                        <option value="aFazer">à fazer</option>
+                    </select>
+                    <button class="btn btn-outline-primary" onClick="filterTarefasFront()"><i class="fa-solid fa-filter"></i></button>
+                </div>
             </div>
 
             <div class="modal">
