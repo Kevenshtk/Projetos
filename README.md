@@ -2,17 +2,17 @@
 
 - ## Pokedex
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/pokedex/src/img/telaPokedex.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaPokedex.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
-    - ### link do repositório: [Pokedex](https://github.com/Kevenshtk/Projetos/tree/main/pokedex)
-    - ### deploy: [Pokedex](https://kevenshtk.github.io/Projetos/pokedex/index.html)
+        <img src="https://skillicons.dev/icons?i=react,sass" alt="icons"/>
+    - ### link do repositório: [Pokedex](https://github.com/Kevenshtk/Pokedex)
+    - ### deploy: [Pokedex](https://pokedex-gamma-ten-40.vercel.app)
 
 
 
 - ## Seleção de personagens - Marvel
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/marvel/src/img/telaSelecao.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaSelecao.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
     - ### link do repositório: [Seleção de personagens](https://github.com/Kevenshtk/Projetos/tree/main/marvel)
@@ -22,7 +22,7 @@
 
 - ## initial D
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/initialD/img/telaInitialD.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaInitialD.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
     - ### link do repositório: [initialD](https://github.com/Kevenshtk/Projetos/tree/main/initialD)
@@ -30,7 +30,7 @@
 
 - ## Mercado Livre
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/mercadoLivre/src/img/telaMercado.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaMercado.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,sass,js" alt="icons"/>
     - ### link do repositório: [mercadoLivre](https://github.com/Kevenshtk/Projetos/tree/main/mercadoLivre)
@@ -38,7 +38,7 @@
 
 - ## To Do List
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/toDoList/src/img/telaToDoList.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaToDoList.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,sass,bootstrap,js,nodejs" alt="icons"/>
     - ### link do repositório: [To Do List](https://github.com/Kevenshtk/Projetos/tree/main/toDoList)
@@ -48,7 +48,7 @@
 
 - ## Agency
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/agency/img/telaAgency.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaAgency.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,sass" alt="icons"/>
     - ### link do repositório: [agency](https://github.com/Kevenshtk/Projetos/tree/main/agency)
@@ -58,7 +58,7 @@
 
 - ## Electrum
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/electrum/img/telaElectrum.png)
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaElectrum.png)
     - ### tecnologias usadas: 
         <img src="https://skillicons.dev/icons?i=html,sass" alt="icons"/>
     - ### link do repositório: [electrum](https://github.com/Kevenshtk/Projetos/tree/main/electrum)
