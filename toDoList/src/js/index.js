@@ -26,7 +26,6 @@ function listTarefas(filtro = 'Todos'){
 
     const novoHTML = tarefas.map((dado) => {
         return `<li class="item ${dado.status == 'Feito' ? 'desativar' : ''}">
-            <span class="id">${dado.id}</span>
             <p class="descricao">${dado.descricao}</p>
 
             <div class="btn-acao">
