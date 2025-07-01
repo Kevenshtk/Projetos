@@ -53,13 +53,3 @@
         <img src="https://skillicons.dev/icons?i=html,sass" alt="icons"/>
     - ### link do repositório: [agency](https://github.com/Kevenshtk/Projetos/tree/main/agency)
     - ### deploy: [agency](https://kevenshtk.github.io/Projetos/agency/index.html)
-
-
-
-- ## Electrum
-    - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaElectrum.png)
-    - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,sass" alt="icons"/>
-    - ### link do repositório: [electrum](https://github.com/Kevenshtk/Projetos/tree/main/electrum)
-    - ### deploy: [electrum](https://kevenshtk.github.io/Projetos/electrum/index.html)
