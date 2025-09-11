@@ -1,4 +1,13 @@
-import {returnlistTarefas, addTarefaBack, updateStatusTarefa, editDescTarefaBack, inactivateTarefa, filterTarefasActive, filterTarefasBack, returnDescTarefas} from './services.js';
+import {
+  returnlistTarefas,
+  addTarefaBack,
+  updateStatusTarefa,
+  editDescTarefaBack,
+  inactivateTarefa,
+  filterTarefasActive,
+  filterTarefasBack,
+  returnDescTarefas,
+} from "./services.js";
 
 window.addTarefaFront = addTarefaFront;
 window.listTarefas = listTarefas;
@@ -8,78 +17,79 @@ window.editDescTarefaFront = editDescTarefaFront;
 window.deleteTarefa = deleteTarefa;
 window.filterTarefasFront = filterTarefasFront;
 
-function addTarefaFront(){
-    const input = document.querySelector('#desc');
-    input.value == '' ? alert('Informe uma tarefa...') : addTarefaBack(input.value);
-    input.value = '';
-    
-    listTarefas();
+function addTarefaFront() {
+  $("#desc").val() == ""
+    ? alert("Informe uma tarefa...")
+    : addTarefaBack($("#desc").val());
+
+  $("#desc").val("");
+
+  listTarefas();
 }
 
-function listTarefas(filtro = 'Todos'){
-    let tarefas = returnlistTarefas();
-    const lista = document.querySelector('#lista');
-    lista.innerHTML = '';
+function listTarefas(filtro = "Todos") {
+  $("#lista").html("");
+  let tarefas = returnlistTarefas();
 
-    tarefas = filterTarefasActive(tarefas);
-    tarefas = filterTarefasBack(filtro);
+  tarefas = filterTarefasActive(tarefas);
+  tarefas = filterTarefasBack(filtro);
 
-    const novoHTML = tarefas.map((dado) => {
-        return `<li class="item ${dado.status == 'Feito' ? 'desativar' : ''}">
+  const novoHTML = $.map(tarefas, (dado) => {
+    return `<li class="item ${dado.status == "Feito" ? "desativar" : ""}">
             <p class="descricao">${dado.descricao}</p>
 
             <div class="btn-acao">
-                <button class="btn btn-outline-success" onclick="finishTarefa(${dado.id})"><i class="fa-solid fa-check"></i></button>
-                <button class="btn btn-outline-info" onclick="showModal(${dado.id})"><i class="fa-solid fa-pen"></i></button>
-                <button class="btn btn-outline-danger" onclick="deleteTarefa(${dado.id})"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="btn btn-outline-success" onclick="finishTarefa(${
+                  dado.id
+                })"><i class="fa-solid fa-check"></i></button>
+                <button class="btn btn-outline-info" onclick="showModal(${
+                  dado.id
+                })"><i class="fa-solid fa-pen"></i></button>
+                <button class="btn btn-outline-danger" onclick="deleteTarefa(${
+                  dado.id
+                })"><i class="fa-solid fa-trash-can"></i></button>
             </div>
         </li>`;
-    }).join("");
+  });
 
-    lista.innerHTML += novoHTML;
+  $("#lista").html(novoHTML);
 }
 
-function finishTarefa(id){
-    updateStatusTarefa(id);
-    listTarefas();
+function finishTarefa(id) {
+  updateStatusTarefa(id);
+  listTarefas();
 }
 
-function showModal(id){
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'flex';
+function showModal(id) {
+  $(".modal").css("display", "flex");
 
-    const input = document.querySelector('#novaDesc');
-    input.value = returnDescTarefas(id)
+  $("#novaDesc").val(returnDescTarefas(id));
 
-    const btnConfirm = document.querySelector('#btnConfirmar');
-    btnConfirm.onclick = () => {
-        editDescTarefaFront(id);
-        modal.style.display = 'none';
-    };
+  $("#btnConfirmar")
+    .off("click")
+    .click(() => {
+      editDescTarefaFront(id);
+      $(".modal").css("display", "none");
+    });
 
-    const btnCancel = document.querySelector('#btnCancelar');
-    btnCancel.onclick = () => {
-        const input = document.querySelector('#novaDesc');
-        input.value = '';
-        
-        modal.style.display = 'none';
-    };
+  $("#btnCancelar")
+    .off("click")
+    .click(() => $(".modal").css("display", "none"));
 }
 
-function editDescTarefaFront(id){
-    const input = document.querySelector('#novaDesc');
-    input.value == '' ? alert('Digite a nova descrição da tarefa...') : editDescTarefaBack(id, input.value);
-    input.value = '';
-    
-    listTarefas();
+function editDescTarefaFront(id) {
+  $("#novaDesc").val() == ""
+    ? alert("Digite a nova descrição da tarefa...")
+    : editDescTarefaBack(id, $("#novaDesc").val());
+
+  listTarefas();
 }
 
-function deleteTarefa(id){
-    inactivateTarefa(id);
-    listTarefas();
+function deleteTarefa(id) {
+  inactivateTarefa(id);
+  listTarefas();
 }
 
-function filterTarefasFront(){
-    const filtro = document.querySelector('#filter');
-    listTarefas(filtro.value)
+function filterTarefasFront() {
+  listTarefas($("#filter").val());
 }
