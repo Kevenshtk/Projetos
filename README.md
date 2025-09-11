@@ -40,7 +40,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/Projetos/img/telaToDoList.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,sass,bootstrap,js,nodejs" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=html,sass,bootstrap,jquery,nodejs" alt="icons"/>
     - ### link do repositório: [To Do List](https://github.com/Kevenshtk/Projetos/tree/main/toDoList)
     - ### deploy: [To Do List](https://kevenshtk.github.io/Projetos/toDoList/index.html)
 
