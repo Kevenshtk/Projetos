@@ -24,7 +24,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/Projetos/img/telaInitialD.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=html,css,jquery" alt="icons"/>
     - ### link do repositório: [initialD](https://github.com/Kevenshtk/Projetos/tree/main/initialD)
     - ### deploy: [initialD](https://kevenshtk.github.io/Projetos/initialD/index.html)
 

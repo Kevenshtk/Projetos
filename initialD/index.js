@@ -1,4 +1,3 @@
-function video(){
-    const trailer = document.querySelector('.trailer')
-    trailer.classList.toggle('active')
-}
+$('.play, .close').on("click", function(){
+    $('.trailer').toggleClass('active');
+});
