@@ -14,7 +14,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/Projetos/img/telaSelecao.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=html,css,jquery" alt="icons"/>
     - ### link do repositório: [Seleção de personagens](https://github.com/Kevenshtk/Projetos/tree/main/marvel)
     - ### deploy: [Seleção de personagens](https://kevenshtk.github.io/Projetos/marvel/index.html)
 

@@ -1,23 +1,12 @@
-const personagens = document.querySelectorAll('.personagem');
+const personagens = document.querySelectorAll(".personagem");
 
-    personagens.forEach((personagem) => {
+$.each(personagens, function(){
+    $(this).on("mouseenter", function(){
+        const idSelecionado = $(this).attr("id");
 
-        personagem.addEventListener('mouseenter', () =>{
-            
-            const idSelecionado = personagem.attributes.id.value;
-
-            const personagemSelecionado = document.querySelector('.selecionado');
-            personagemSelecionado.classList.remove('selecionado');
-
-            personagem.classList.add('selecionado');
-
-            const imagemJogador1 = document.getElementById('personagem-jogador-1');
-            imagemJogador1.src = `./src/img/${idSelecionado}.png`;
-
-            const nomejogador1 = document.getElementById('nome-jogador-1');
-            const nomeSelecionado = personagem.getAttribute('data-name');
-
-            nomejogador1.innerHTML = nomeSelecionado;
-    
-        })
-    })
+        $('.selecionado').removeClass('selecionado');
+        $(this).addClass('selecionado');
+        $('#personagem-jogador-1').attr('src', `./src/img/${idSelecionado}.png`);
+        $('#nome-jogador-1').html($(this).attr('data-name'));
+    });
+})
