@@ -32,7 +32,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/Projetos/img/telaMercado.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,sass,js" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=html,sass,jquery" alt="icons"/>
     - ### link do repositório: [mercadoLivre](https://github.com/Kevenshtk/Projetos/tree/main/mercadoLivre)
     - ### deploy: [mercadoLivre](https://kevenshtk.github.io/Projetos/mercadoLivre/index.html)
 

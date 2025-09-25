@@ -1,24 +1,16 @@
 function mudarImgProduto() {
-    const cards = document.querySelectorAll('.produto');
-    const cardElement = document.getElementById('img-produto-g');
+  const cards = document.querySelectorAll(".produto");
 
-    cards.forEach((produto) => {
-        produto.addEventListener('mouseenter', () => {
-            const idSelecionado = produto.id;
+  $.each(cards, function () {
+    $(this).on("mouseenter", function () {
+      const idSelecionado = this.id;
 
-            cards.forEach((img) => {
-                img.classList.remove('selecionado');
-            });
+      $.each(cards, function () {
+        $(this).removeClass("selecionado");
+      });
 
-            produto.classList.add('selecionado');
-
-            cardElement.innerHTML = `<img id="produto-g" src="src/img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
-        });
-
-        produto.addEventListener('mouseleave', () => {
-
-            cardElement.innerHTML = `<img id="produto-g" src="src/img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
-
-        });
+      $(this).addClass("selecionado");
+      $("#produto-g").attr("src", `src/img/img-produto/${idSelecionado}.png`);
     });
+  });
 }
