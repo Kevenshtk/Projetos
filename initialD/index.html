@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Serie | Initial D | Website Landing Page Design</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <a href="https://www.netflix.com/br/" class="logo" rel="next"><img class="logo-img" src="img/logo.png"></a>
-        <ul class="nav">
-            <li class="nav-list"><a href="#" class="nav-list-text">Home</a></li>
-            <li class="nav-list"><a href="#" class="nav-list-text">TV Shows</a></li>
-            <li class="nav-list"><a href="#" class="nav-list-text">Filmes</a></li>
-            <li class="nav-list"><a href="#" class="nav-list-text">Ultimos lançamentos</a></li>
-            <li class="nav-list"><a href="#" class="nav-list-text">Minha lista</a></li>
+
+<body class="bg-black font-['Poppins']">
+    <header
+        class="w-full flex flex-col justify-between items-center py-[10px] absolute top-0 left-0 z-10 md:p-[20px] xl:flex-row xl:py-[20px] xl:px-[50px] ">
+        <a href="https://www.netflix.com/br/" rel="next"><img
+                class="w-[200px] transform hover:scale-105 transition-transform duration-500" src="img/logo.png"></a>
+        <ul class="flex flex-wrap justify-center text-white font-bold tracking-wider my-4">
+            <li class="mx-[10px]"><a href="#" class="hover:text-red-600 transition-colors duration-500">Home</a></li>
+            <li class="mx-[10px]"><a href="#" class="hover:text-red-600 transition-colors duration-500">TV Shows</a>
+            </li>
+            <li class="mx-[10px]"><a href="#" class="hover:text-red-600 transition-colors duration-500">Filmes</a></li>
+            <li class="mx-[10px]"><a href="#" class="hover:text-red-600 transition-colors duration-500">Ultimos
+                    lançamentos</a></li>
+            <li class="mx-[10px]"><a href="#" class="hover:text-red-600 transition-colors duration-500">Minha lista</a>
+            </li>
         </ul>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="w-[calc(100%-20px)] h-[40px] text-white relative md:h-[40px] md:w-[300px] ">
+            <input type="text" placeholder="Search"
+                class="w-full h-full pr-[10px] pl-[46px] border-2 border-red-600 rounded-full outline-none bg-white/5 backdrop-blur-lg placeholder-white">
+            <i class="fa fa-search pr-[10px] border-r-2 boreder-white absolute top-1/2 left-[10px] -translate-y-1/2"
+                aria-hidden="true"></i>
         </div>
     </header>
 
     <main>
-        <div class="banner">
-            <img class="img-banner" src="img/background-initial.jpg">
-            <div class="content">
-                <h2>Initial D</h2>
-                <h4>
-                    <span>2013</span>
-                    <span><i>+14</i></span>
-                    <span>Oito Temporadas</span>
-                    <span>Corrida / Aventura</span>
+        <div class="w-full min-h-[100vh] flex justify-start items-center px-[50px] relative md:px-[100px]">
+            <img class="w-full h-full object-cover opacity-40 absolute top-0 left-0" src="img/background-initial.jpg">
+            
+            <div class="max-w-[500px] flex flex-col justify-between gap-[20px] text-white relative z-10">
+                <h2 class="font-['Noto Sans JP'] font-extrabold text-5xl uppercase">Initial D</h2>
+                <h4 class="font-bold">
+                    <span class="pr-[10px] border-r border-gray-500">2013</span>
+                    <span class="px-[10px] border-r border-gray-500"><i class="px-[8px] bg-orange-400">+14</i></span>
+                    <span class="px-[10px] border-r border-gray-500">Oito Temporadas</span>
+                    <span class="pl-[10px]">Corrida / Aventura</span>
                 </h4>
-                <p>Durante o dia, um jovem de 18 anos faz entregas de tofu para o pai,<br>
-                um piloto de corridas reformado. Mas, de noite, é o adolescente<br> que leva o pé ao acelerador.</p>
-                 
-                 <div class="buttons">
-                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Minha Lista</a>
-                 </div>
+
+                <p class="font-medium">Durante o dia, um jovem de 18 anos faz entregas de tofu para o pai,
+                    um piloto de corridas reformado. Mas, de noite, é o adolescente que leva o pé ao acelerador.</p>
+
+                <div class="w-full flex gap-[10px] font-bold uppercase tracking-wider no-underline">
+                    <a href="#"
+                        class="bg-red-600 rounded-md px-[10px] py-[9px] shadow-[0_0.5rem_1rem_rgb(0,0,0,0.7)] relative"><i
+                            class="fa fa-play" aria-hidden="true"></i> Play</a>
+                    <a href="#"
+                        class="bg-black rounded-md px-[10px] py-[9px] shadow-[0_0.5rem_1rem_rgb(0,0,0,0.7)] relative"><i
+                            class="fa fa-plus" aria-hidden="true"></i> Minha Lista</a>
+                </div>
             </div>
 
-            <a class="play">
-                <img class="img-play" src="img/botao-play.png" alt="Play">Assistir Trailer
+            <a id="play"
+                class="flex items-center font-bold text-white text-base uppercase tracking-wider cursor-pointer absolute bottom-[50px] left-[50px] xl:left-[100px]">
+                <img class="max-w-[40px] m-[16px] xl:mr-[10px]" src="img/botao-play.png" alt="Play">Assistir
+                Trailer
             </a>
         </div>
 
-        <div class="trailer">
-            <video src="video/trailer.webm" controls="true" autoplay="true"></video>
-            <img class="close" src="img/close.png" alt="Sair">
+        <div id="container-trailer"
+            class="w-full h-full flex justify-center items-center z-10 invisible backdrop-blur-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <video class="max-w-[90%] shadow-xl shadow-black xl:max-w-[700px]" src="video/trailer.webm"
+                controls="true"></video>
+            <img id="close" class="max-w-[32px] cursor-pointer invert absolute top-[30px] right-[30px]"
+                src="img/close.png" alt="Sair">
         </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

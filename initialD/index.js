@@ -1,3 +1,4 @@
-$('.play, .close').on("click", function(){
-    $('.trailer').toggleClass('active');
+$("#play, #close").on("click", function () {
+  $("#container-trailer").toggleClass("invisible");
+  $("#container-trailer").toggleClass("visible");
 });
