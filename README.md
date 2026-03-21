@@ -4,7 +4,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/Projetos/img/telaPokedex.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=react,sass" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=nextjs,tailwind,typescript" alt="icons"/>
     - ### link do repositório: [Pokedex](https://github.com/Kevenshtk/Pokedex)
     - ### deploy: [Pokedex](https://pokedex-gamma-ten-40.vercel.app)
 
