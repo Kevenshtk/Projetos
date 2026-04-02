@@ -53,3 +53,12 @@
         <img src="https://skillicons.dev/icons?i=html,sass" alt="icons"/>
     - ### link do repositório: [agency](https://github.com/Kevenshtk/Projetos/tree/main/agency)
     - ### deploy: [agency](https://kevenshtk.github.io/Projetos/agency/index.html)
+
+
+- ## Body Kits Showcase — Liberty Walk & Rocket Bunny
+    - ### imagem do projeto:
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaImersaoAlura.png)
+    - ### tecnologias usadas: 
+        <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
+    - ### link do repositório: [Imersao-alura-2025](https://github.com/Kevenshtk/Projetos/tree/main/Imersao-alura-2025)
+    - ### deploy: [Imersao-alura-2025](https://kevenshtk.github.io/Projetos/Imersao-alura-2025/index.html)
