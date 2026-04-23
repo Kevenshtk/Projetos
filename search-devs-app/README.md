@@ -36,11 +36,6 @@ Aplicação web desenvolvida em React que permite buscar usuários do GitHub e v
 
 ---
 
-## 🔗 Acesse o projeto
-
-👉 https://search-devs-app.vercel.app
----
-
 ## 🧠 Decisões técnicas
 
 ### 🔹 Uso de Zod
