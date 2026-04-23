@@ -62,3 +62,11 @@
         <img src="https://skillicons.dev/icons?i=html,css,js" alt="icons"/>
     - ### link do repositório: [Imersao-alura-2025](https://github.com/Kevenshtk/Projetos/tree/main/Imersao-alura-2025)
     - ### deploy: [Imersao-alura-2025](https://kevenshtk.github.io/Projetos/Imersao-alura-2025/index.html)
+
+
+- ## Search Devs App
+    - ### imagem do projeto:
+    ![Imagem](https://kevenshtk.github.io/Projetos/img/telaSearchDevsApp.png)
+    - ### tecnologias usadas: 
+        <img src="https://skillicons.dev/icons?i=react,ts" alt="icons"/>
+    - ### link do repositório: [search-devs-app](https://github.com/Kevenshtk/Projetos/tree/main/search-devs-app)
