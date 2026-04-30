@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha seu personagem</title>
-    <link rel="stylesheet" href="./src/css/variaveis.css">
-    <link rel="stylesheet" href="./src/css/reset.css"/>
-    <link rel="stylesheet" href="./src/css/fontes.css"/>
-    <link rel="stylesheet" href="./src/css/animacoes.css"/>
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha seu personagem</title>
+  <link rel="stylesheet" href="./src/css/animacoes.css" />
+  <link rel="stylesheet" href="./src/css/estilo.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <main>
-        <header class="cabecalho">
-            <h1 class="titulo">Character Select</h1>
-        </header>
-        <div class="selecao-de-personagens">
-            <div class="personagem-grande personagem-jogador-1">
-                <img src="src/img/thor.png" alt="Persogenagem selecionado jogador 1" id="personagem-jogador-1">
-                <div class="nome">
-                    <h2 id="nome-jogador-1">Thor</h2>
-                </div>
-            </div>
 
-            <ul class="lista-de-personagens">
-                <li class="personagem selecionado" id="thor" data-name="Thor">
-                    <span class="tag">1P</span>
-                    <img src="src/img/thor.jpg" alt="Personagem Thor">
-                </li>
-
-                <li class="personagem" id="homem-de-ferro" data-name="Homem de ferro">
-                    <span class="tag">1P</span>
-                    <img src="src/img/homem-de-ferro.jpg" alt="Personagem Homem de ferro">
-                </li>
-        
-                  <li class="personagem" id="viuva-negra" data-name="Viúva negra">
-                    <span class="tag">1P</span>
-                    <img src="src/img/viuva-negra.jpg" alt="Personagem Viúva Negra">
-                </li>
-        
-                <li class="personagem" id="hulk" data-name="Hulk">
-                  <span class="tag">1P</span>
-                  <img src="src/img/hulk.jpg" alt="Personagem Hulk">
-              </li>
-        
-                <li class="personagem" id="capitao-america" data-name="Capitão america">
-                  <span class="tag">1P</span>
-                  <img src="src/img/capitao-america.jpg" alt="Personagem Capitão America">
-              </li>
-        
-                <li class="personagem jogador-2-selecionado" id="ultron" data-name="Ultron">
-                  <span class="tag">2P</span>
-                  <img src="src/img/ultron.jpg" alt="Personagem Ultron">
-              </li>
-        
-              <li class="personagem" id="doutor-doom" data-name="Doutor Doom">
-                <span class="tag">1P</span>
-                <img src="src/img/doutor-doom.jpg" alt="Personagem Doutor Doom">
-              </li>
-        
-              <li class="personagem" id="nova" data-name="Nova">
-                <span class="tag">1P</span>
-                <img src="src/img/nova.jpg" alt="Personagem Nova">
-              </li>
-        
-              <li class="personagem" id="fenix" data-name="Fênix">
-                <span class="tag">1P</span>
-                <img src="src/img/fenix.jpg" alt="Personagem Fênix">
-              </li>
-            </ul>
-
-            <div class="personagem-grande personagem-jogador-2">
-                <img src="src/img/ultron.png" alt="Personagem selecionado jogador 2"
-                id="personagem-jogador-2">
-                <div class="nome">
-                  <h2 id="nome-jogador-2">Ultron</h2>
-                </div>
-              </div>
+<body
+  class="before:content-[''] before:w-full before:h-full before:bg-no-repeat before:bg-cover before:bg-center before:absolute before:opacity-25">
+  <main class="min-h-[100vh] flex flex-col justify-center py-[5px]">
+    <header class="cabecalho z-0 flex justify-center">
+      <h1 class="titulo text-[22px] md:text-[40px] xl:text-[52px] leading-[102px] uppercase">Character Select</h1>
+    </header>
+    <div class="selecao-de-personagens flex items-center justify-center">
+      <div class="personagem-grande personagem-jogador-1 sm:invisible md:visible w-[30%] h-[70vh] text-center relative ">
+        <img src="src/img/thor.png" class="absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]"
+          alt="Personagem selecionado jogador 1" id="personagem-jogador-1">
+        <div
+          class="nome before:content-[''] before:w-full before:h-[30px] before:absolute before:left-0 before:bottom-[-15px]">
+          <h2 id="nome-jogador-1" class="w-full text-4xl absolute bottom-0">Thor</h2>
         </div>
-    </main>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="src/js/index.js"></script>
+      </div>
+
+      <ul class="lista-de-personagens max-w-[330px] xl:max-w-[600px] flex flex-wrap justify-center gap-[12px]">
+        <li class="personagem selecionado w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="thor"
+          data-name="Thor">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/thor.jpg" class="w-full h-full rounded" alt="Personagem Thor">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="homem-de-ferro"
+          data-name="Homem de ferro">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/homem-de-ferro.jpg" class="w-full h-full rounded" alt="Personagem Homem de ferro">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="viuva-negra"
+          data-name="Viúva negra">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/viuva-negra.jpg" class="w-full h-full rounded" alt="Personagem Viúva Negra">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="hulk" data-name="Hulk">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/hulk.jpg" class="w-full h-full rounded" alt="Personagem Hulk">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="capitao-america"
+          data-name="Capitão america">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/capitao-america.jpg" class="w-full h-full rounded" alt="Personagem Capitão America">
+        </li>
+
+        <li class="personagem jogador-2-selecionado w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="ultron"
+          data-name="Ultron">
+          <span class="tag absolute top-[5px] left-[5px]">2P</span>
+          <img src="src/img/ultron.jpg" class="w-full h-full rounded" alt="Personagem Ultron">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="doutor-doom"
+          data-name="Doutor Doom">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/doutor-doom.jpg" class="w-full h-full rounded" alt="Personagem Doutor Doom">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="nova" data-name="Nova">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/nova.jpg" class="w-full h-full rounded" alt="Personagem Nova">
+        </li>
+
+        <li class="personagem w-[100px] h-[100px] xl:w-[30%] xl:h-[160px] z-10 rounded cursor-pointer relative hover:scale-[1.07]" id="fenix" data-name="Fênix">
+          <span class="tag absolute top-[5px] left-[5px]">1P</span>
+          <img src="src/img/fenix.jpg" class="w-full h-full rounded" alt="Personagem Fênix">
+        </li>
+      </ul>
+
+      <div class="personagem-grande sm:invisible md:visible w-[30%] h-[70vh] text-center relative personagem-jogador-2">
+        <img src="src/img/ultron.png" class="absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]"
+          alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
+        <div
+          class="nome before:content-[''] before:w-full before:h-[30px] before:absolute before:left-0 before:bottom-[-15px]">
+          <h2 id="nome-jogador-2" class="w-full text-4xl absolute bottom-0">Ultron</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="src/js/index.js"></script>
 </body>
+
 </html>
